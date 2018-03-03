@@ -5,8 +5,10 @@
 </head>
 <body>
     <div id="app">
-        <button @click="add">Add a Year</button>
-        <button @click="substract">Substract a Year</button>
+        <button @click="add(1)">Add a Year</button>
+        <button @click="substract(1)">Substract a Year</button>
+        <button @dblclick="add(10)">Add 10 Year</button>
+        <button @dblclick="substract(10)">Substract 10 Year</button>
         <p>My age is {{ age }}</p>
     </div>
     
