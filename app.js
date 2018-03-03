@@ -4,8 +4,11 @@ new Vue({
         age: 25,
     },
     methods: {
-        greet(time) {
-            return 'Good ' + time + ' ' + this.name
+        add() {
+            return this.age++;
+        },
+        substract() {
+            return this.age--;
         }
     }
 })
