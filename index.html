@@ -5,11 +5,9 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ greet('Night') }}</h1>
-        <p>Name: {{ name }}</p>
-        <p>Job: {{ job }}</p>
-        <a v-bind:href="web" target="_blank">Web</a>
-        <p v-html="webTag"></p>
+        <button @click="age++">Add a Year</button>
+        <button @click="age--">Substract a Year</button>
+        <p>My age is {{ age }}</p>
     </div>
     
     <script src="vue.js"></script>
