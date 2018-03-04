@@ -10,6 +10,11 @@ new Vue({
     },
 
     computed: {
-        
+        compClasses() {
+            return {
+                available: this.available,
+                nearby: this.nearby,
+            }
+        }
     }
 })
