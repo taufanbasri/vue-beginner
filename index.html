@@ -6,17 +6,13 @@
 </head>
 <body>
     <div id="app">
-        <h1>Keyboard Events</h1>
-        <div>
-            <label>Name:</label>
-            <input type="text" v-model="name">
-            <span>{{ name }}</span>
-        </div>
-        <div>
-            <label>Age:</label>
-            <input type="text" v-model="age">
-            <span>{{ age }}</span>
-        </div>
+        <h1>Computed Properties</h1>
+        <button @click="a++">Add to A</button>
+        <button @click="b++">Add to B</button>
+        <p>{{ a }}</p>
+        <p>{{ b }}</p>
+        <p>Age + A = {{ addToA }}</p>
+        <p>Age + B = {{ addToB }}</p>
     </div>
     
     <script src="vue.js"></script>
