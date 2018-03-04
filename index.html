@@ -7,10 +7,16 @@
 <body>
     <div id="app">
         <h1>Keyboard Events</h1>
-        <label>Name:</label>
-        <input type="text" v-on:keyup.enter="logName">
-        <label>Age:</label>
-        <input type="text" v-on:keyup.alt.enter="logAge">
+        <div>
+            <label>Name:</label>
+            <input type="text" v-model="name">
+            <span>{{ name }}</span>
+        </div>
+        <div>
+            <label>Age:</label>
+            <input type="text" v-model="age">
+            <span>{{ age }}</span>
+        </div>
     </div>
     
     <script src="vue.js"></script>
