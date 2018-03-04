@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>VueJS Beginners Tutorial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
@@ -10,6 +11,10 @@
         <button @dblclick="add(10)">Add 10 Year</button>
         <button @dblclick="substract(10)">Substract 10 Year</button>
         <p>My age is {{ age }}</p>
+
+        <div id="canvas" @mousemove="updateXY">
+            {{ x }}, {{ y }}
+        </div>
     </div>
     
     <script src="vue.js"></script>
