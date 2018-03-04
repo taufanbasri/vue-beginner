@@ -11,7 +11,7 @@
         <button @click="error = !error">Toggle Error</button>
         <button @click="success = !success">Toggle Success</button>
 
-        <p v-if="error">There has been an error</p>
+        <p v-show="error">There has been an error</p>
         <p v-else-if="success">Success</p>
     </div>
     
