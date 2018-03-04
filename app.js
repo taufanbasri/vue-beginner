@@ -1,21 +1,12 @@
-Vue.component('greeting', {
-    template: '<p>Hey there, I am {{ name }} <button @click="changeName">Change Name</button></p>',
-    data() {
-        return {
-            name: 'Taufan'
-        }
+new Vue({
+    el: '#app',
+    data: {
+        output: 'Your favorit food'
     },
     methods: {
-        changeName() {
-            this.name = 'Keti'
+        readRefs() {
+            console.log(this.$refs.input.value);
+            this.output = this.$refs.input.value;
         }
     }
-});
-
-var one = new Vue({
-    el: '#app-one'
-});
-
-var two = new Vue({
-    el: '#app-two'
 });
